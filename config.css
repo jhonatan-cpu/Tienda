@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+}
+
+.categorias, section {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.categorias ul {
+    display: inline-block;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.titulo-principal {
+    border: 1px solid black;
+    padding: 10px 20px;
+    display: inline-block;
+    font-family: monospace;
+    font-weight: normal;
+    margin: 10px auto;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: white; 
+    border-radius: 4px;
+}

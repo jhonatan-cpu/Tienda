@@ -1,0 +1,122 @@
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+}
+
+.categorias, section {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.categorias ul {
+    display: inline-block;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.titulo-principal {
+    border: 1px solid black;
+    padding: 10px 20px;
+    display: inline-block;
+    font-family: monospace;
+    font-weight: normal;
+    margin: 10px auto;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: white; 
+    border-radius: 4px;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid black;
+
+    /*--|Alineacion*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header span {
+    font-size: 40px;
+}
+
+header h2 {
+    font-size: 22px;
+}
+
+.categorias {
+    margin-top: 20px;
+}
+
+.categorias p {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.categorias ul {
+    list-style: disc inside;
+    margin-left: 10px;
+}
+
+.categorias li {
+    margin-bottom: 5px;
+}
+
+/* ========================= */
+/* 🔹 Corrección productos   */
+/* ========================= */
+
+/* Hacemos que cada <section> que contiene productos se comporte como fila */
+body > section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Cada tarjeta de producto */
+section .producto {
+    flex: 1 1 calc(25% - 20px);   /* 4 productos por fila */
+    max-width: calc(25% - 20px);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+section .producto:hover {
+    transform: scale(1.05);
+}
+
+/* Imagen del producto */
+section .producto img {
+    width: 100%;
+    height: auto;
+    max-height: 160px;
+    object-fit: contain;
+    margin: 0 auto 8px;
+    border-radius: 6px;
+}
+
+/* Texto del producto */
+section .producto h4 {
+    font-size: 13px;
+    margin: 6px 0;
+    min-height: 35px;
+}
+
+section .producto p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
+}
+
+
+
